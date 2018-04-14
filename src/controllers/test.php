@@ -46,8 +46,8 @@ require_once( DP_PLUGIN_DIR . 'class.authenticate.php' );
 <?php
 
 require_once(DP_PLUGIN_DIR . 'helpers.php');
-
-  echo "Testing email functionality... \n";
+	echo get_home_url();
+  echo "\nTesting email functionality... \n";
 
   $address = "example@email.com";
   $subject = "Hello!";

@@ -45,7 +45,7 @@ if ( isset( $_POST[$nonce_name] ) ) {
 		$id = $result[0]->user_id;
 		$request_id = $user[0]->id;
 		if ( $request_id != $id ) {
-			throw new BadInputException( "Data mismatch. Please submit a new reset request." );
+			throw new BadInputException( "Data mismatch. ".$request_id. "Please submit a new reset request." );
 		}
     
     	/* Retrieve new password and replace old */
